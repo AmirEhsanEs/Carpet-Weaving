@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <title>Title</title>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <div class="nav-header">
+                <h3>فرش ایران</h3>
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <i class="bi bi-list-nested"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <a class="nav-link" href="index.html">صفحه اصلی</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="products.html">محصولات</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="users.html">کاربران</a>
+                </li>
+            </ul>
+
+            <ul class="nav-icons">
+                <li>
+                    <a class="nav-icon" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-icon" href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-icon" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="create-user-content"> 
+        <div class="create-user-container">
+            <div>
+                <a type="button" id="return-btn" href="users.html">بازگشت</a>
+            </div>
+            <div class="user-form">
+                <div class="user-form-container">
+                  <div class="create-user-form">
+                    <label for="user-name">  نام:</label>
+                    <input type="text" id="user-name" placeholder="نام">
+                    <label for="user-username"> نام کاربری:</label>
+                    <input type="text" id="user-username" placeholder="نام کاربری">
+                    <label for="user-email"> ایمیل:</label>
+                    <input type="email" id="user-email" placeholder="ایمیل">
+                    <label for="user-password">  رمز عبور:</label>
+                    <input type="password" id="user-password" placeholder="رمز عبور">
+                    <label for="user-phone"> تلفن:</label>
+                    <input type="tel" id="user-phone" placeholder="تلفن">
+                    <button id="create-user-ok-btn" onclick="validateForm()">ایجاد</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section footer">
+        <ul class="nav-links footer-links" >
+            <li>
+                <a class="footer-link scroll-link" href="#home">صفحه اصلی</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#products">محصولات</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#news">اخبار</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#about">درباره ما</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#contact">تماس با ما</a>
+            </li>
+        </ul>
+        <ul class="footer-icons">
+            <li>
+                <a class="footer-icon" href="#">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a class="footer-icon" href="#">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a class="footer-icon" href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">
+            کلیه‌ی حقوق نزد وبسایت ما محفوظ است و هر گونه
+            کپی‌برداری از مطالب، پیگرد قانونی دارد.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/createUser.js"> </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

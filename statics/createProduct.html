@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <title>Title</title>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <div class="nav-header">
+                <h3>فرش ایران</h3>
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <i class="bi bi-list-nested"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <a class="nav-link" href="index.html">صفحه اصلی</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="products.html">محصولات</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="users.html">کاربران</a>
+                </li>
+            </ul>
+
+            <ul class="nav-icons">
+                <li>
+                    <a class="nav-icon" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-icon" href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-icon" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="create-product-content"> 
+        <div class="create-product-container">
+            <div>
+                <a type="button" id="return-btn" href="products.html">بازگشت</a>
+            </div>
+            <div class="product-form">
+                <div class="product-form-container">
+                  <div class="create-product-form">
+                    <label for="product-name"> نام کالا:</label>
+                    <input type="text" id="product-name" placeholder="نام">
+                    <label for="product-price"> قیمت:</label>
+                    <input type="number" id="product-price" placeholder="قیمت">
+                    <label for="product-image"> تصویر:</label>
+                    <input type="file" id="product-image">
+                    <label for="product-description">توضیحات:</label>
+                    <textarea id="product-description" placeholder="توضیحات"></textarea>
+                    <button id="create-user-ok-btn" onclick="validateForm()">ایجاد</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section footer">
+        <ul class="nav-links footer-links" >
+            <li>
+                <a class="footer-link scroll-link" href="#home">صفحه اصلی</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#products">محصولات</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#news">اخبار</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#about">درباره ما</a>
+            </li>
+            <li>
+                <a class="footer-link scroll-link" href="#contact">تماس با ما</a>
+            </li>
+        </ul>
+        <ul class="footer-icons">
+            <li>
+                <a class="footer-icon" href="#">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a class="footer-icon" href="#">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a class="footer-icon" href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">
+            کلیه‌ی حقوق نزد وبسایت ما محفوظ است و هر گونه
+            کپی‌برداری از مطالب، پیگرد قانونی دارد.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/createProduct.js"> </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
